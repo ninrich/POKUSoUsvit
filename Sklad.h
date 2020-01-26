@@ -8,6 +8,7 @@
 #include "Surovina.h"
 #include "Suroviny/Drevo.h"
 #include "Vyrobok.h"
+#include "Recept.h"
 #include <vector>
 #include <iostream>
 #include <map>
@@ -23,8 +24,6 @@ private:
     vector <Vyrobok*> vyrobky = vector<Vyrobok*>();
 
 public:
-    static int financie;
-    Sklad(Surovina&, Surovina&, Surovina&);
     Sklad();
     int getPocetVyrobkov(string);
     int getCenaVyrobku(string);
@@ -46,7 +45,7 @@ public:
     /* zrata vsetky vyrobky a vrati ich pocet */
     int getPocetVyrobkov();
 
-
+    /* vypise vsetko do cout */
     void vypisSuroviny();
 
 
